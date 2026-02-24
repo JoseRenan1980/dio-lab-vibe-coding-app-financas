@@ -1,121 +1,89 @@
-# VibeFinanças
+# 💸 App de Organização de Finanças Pessoais com Vibe Coding
 
-**VibeFinanças** é um protótipo de app de organização de finanças pessoais baseado em conversas em linguagem natural. O usuário registra gastos digitando ou falando; o Agente sugere classificação e pede confirmação antes de salvar. Foco em simplicidade, acessibilidade e experiência conversacional.
+Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
 
----
+## ✨ O que é Vibe Coding
 
-## Visão geral
+**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
 
-**Problema:** muitos apps de finanças exigem entrada manual e desmotivam iniciantes.  
-**Solução:** interface conversacional que reduz fricção: registre gastos por texto/voz, confirme via cartão, acompanhe metas e visualize relatórios simples.  
-**Público‑alvo:** iniciantes que querem controlar gastos sem planilhas.  
-**Nome do projeto:** **VibeFinanças**
+> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
 
----
+## 🎯 Desafio
 
-## Funcionalidades principais
+Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
 
-- **Onboarding**: coleta de nome, objetivo financeiro e idioma.  
-- **Chat em linguagem natural**: registrar gastos com parsing automático (valor, categoria, data).  
-- **Modal de confirmação**: Confirmar / Editar / Reclassificar antes de salvar.  
-- **Persistência**: integração com Google Sheets (via Webhook) para prototipagem sem backend.  
-- **Metas**: criar metas e acompanhar progresso.  
-- **Relatórios**: exportação de dados para gerar gráficos (pizza por categoria; linha por mês).  
-- **Tutorial interativo e FAQ**: 6 perguntas frequentes + opção “Não encontrei” para falar com o Agente.  
-- **i18n**: Português Brasileiro por padrão; suporte a Inglês, Espanhol e Francês.  
-- **Paleta visual**: variações de verde — **#0B6B3A**, **#2EA86A**, **#BFF3D6**.
+Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
 
----
+> [!IMPORTANT]
+> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
 
-## Prompt final (PRD) usado com a IA
+## 🪄 Etapas do Desafio
 
-Você é o Agente Financeiro Vibe. Responda em Português Brasileiro por padrão e no idioma do usuário quando solicitado (pt/en/es/fr). Tom: educativo, direto e empático. Comece recomendações com "Sugestão:". Funcionalidades essenciais:
+### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
 
-Onboarding (nome, objetivo, idioma).
+Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
 
-Chat em linguagem natural para registrar gastos (texto e opcionalmente voz).
+Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
 
-Parsing automático de valor, categoria e data; sempre abrir modal de confirmação com opções Confirmar / Editar / Reclassificar antes de salvar.
+```txt
+# Contexto
+Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
+A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
 
-Persistência das transações (Google Sheets ou DB).
+# Problema
+Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
+Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
 
-Metas financeiras com progresso.
+# Público-Alvo
+Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
 
-Relatórios simples (pizza por categoria; linha por mês).
+# Funcionalidades-Chave
+1. Registrar gastos via chat em linguagem natural.  
+2. Classificar automaticamente as transações.  
+3. Definir e acompanhar metas financeiras.  
+4. Receber dicas de economia do “Agente Financeiro”.  
+5. Visualizar relatórios simples e personalizados.
 
-Tutorial interativo com FAQ (6 perguntas) e opção "Não encontrei" que abre chat com o Agente.
+# Entregável da IA
+Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
+Usar tom educativo e linguagem acessível, em português.
+```
 
-i18n: PT/EN/ES/FR.
+Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
 
-Paleta de verdes: #0B6B3A,#2EA86A,#BFF3D6.
+> [!TIP]
+> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
 
-Evitar pedir dados sensíveis; confirmar exclusões; aplicar regras de privacidade (cada usuário só vê seus dados).
-Responda com exemplos de microcopy e mensagens de confirmação. Use linguagem acessível e curta.
+### 2. Explorando o Lovable na Prática
 
+Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
+- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
+- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
 
----
+Durante essa etapa, você pode orientar a IA para três entregas principais:
+1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
+2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
+3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
 
-## Como executar o protótipo (Landbot)
+> [!TIP]
+> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
 
-1. **Criar bot no Landbot** com nome **VibeFinanças**.  
-2. **Blocos essenciais**:
-   - Start → Perguntar nome (`@name`) → Perguntar objetivo (`@objective`) → Perguntar idioma (`@lang`) → Mensagem de boas‑vindas.
-   - Input livre → bloco de processamento (mock ou regex) → modal ConfirmTransaction (Confirmar / Editar / Reclassificar).
-   - FAQ/Tutorial com botão “Não encontrei” que abre chat livre.
-3. **Persistência**: conectar Webhook do Landbot ao Google Sheets (colunas: timestamp, user_name, amount, category, date, note, source).  
-4. **Testes**: simular 10 conversas; validar gravação no Google Sheets.  
-5. **Evidências**: capturar 3 prints (onboarding, modal confirm, Google Sheets) e opcionalmente um vídeo curto (30–60s).
+### 3. Entregando o Desafio na DIO
 
----
+Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
+No README do seu repositório, inclua:
 
-## Estrutura do repositório sugerida
+- Seu **prompt final** (PRD);  
+- Prints ou pequenos vídeos das interações com a IA;  
+- Um resumo do que o seu **App de Finanças Pessoais** faz;  
+- Uma breve **reflexão sobre o processo**:
+  - O que funcionou bem?  
+  - O que não funcionou como o esperado?  
+  - O que aprendeu sobre conversar com IAs?
 
-/ (root)
-├─ README.md
-├─ assets/
-│  ├─ screenshots/
-│  │  ├─ onboarding.png
-│  │  ├─ confirm_transaction.png
-│  │  └─ google_sheets.png
-│  └─ video/
-│     └─ demo.mp4 (opcional)
-├─ landbot_flow_export.json (se disponível)
-├─ flow_description.md
-└─ sheet_sample.csv
+> [!TIP]
+> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
 
+## 💬 Conclusão
 
-**sheet_sample.csv** (exemplo)
-
-timestamp,user_name,amount,category,date,note,source
-2026-02-24 13:00,José,50,Alimentação,2026-02-24,"Mercado",landbot
-2026-02-24 13:05,José,30,Transporte,2026-02-24,"Uber",landbot
-2026-02-24 13:10,José,200,Poupança,2026-02-24,"Transferência",landbot
-
-
----
-
-## Evidências e entrega para a DIO
-
-- **README.md** atualizado com o PRD e instruções.  
-- **assets/screenshots/** com pelo menos 3 imagens: onboarding, modal confirm, Google Sheets.  
-- **landbot_flow_export.json** ou **flow_description.md** descrevendo o fluxo (se export não for possível).  
-- **sheet_sample.csv** com 3 transações de exemplo.  
-- **Commit message sugerido:** `feat: add VibeFinanças prototype and README with PRD and evidence`  
-- **Link público do fork**: copie o URL do seu fork e submeta na plataforma DIO.
-
----
-
-## Reflexão modelo (adicione suas impressões)
-
-**O que aprendi:** prototipar conversas reduz atrito e melhora a taxa de registro de gastos; usar mocks economiza cotas de LLM durante validação.  
-**Desafios:** parsing robusto de linguagem natural; balancear automação e confirmação para evitar erros.  
-**Próximos passos:** integrar OpenAI/LLM com controle de histórico (últimas 6 mensagens), melhorar NLU com exemplos reais e adicionar gráficos in‑app.
-
----
-
-## Licença
-
-Este repositório segue a mesma licença do repositório-base da DIO. Adapte conforme necessário.
-
----
-
+Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
