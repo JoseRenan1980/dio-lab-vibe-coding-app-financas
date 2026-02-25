@@ -84,7 +84,7 @@ Capturar: **tipo**, **valor**, **categoria**, **data**, **observação** e opcio
   "observacao": "Uber para reunião"
 }
 
-
+---
 
 sheet_sample.csv (colunas e exemplo)
 Colunas recomendadas: usuario_id,tipo,valor,categoria,data,observacao  
