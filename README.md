@@ -84,6 +84,8 @@ Capturar: **tipo**, **valor**, **categoria**, **data**, **observação** e opcio
   "observacao": "Uber para reunião"
 }
 
+
+
 sheet_sample.csv (colunas e exemplo)
 Colunas recomendadas: usuario_id,tipo,valor,categoria,data,observacao  
 Exemplo de linha:
@@ -198,3 +200,18 @@ Abra uma Issue no repositório para dúvidas, sugestões ou relatos de bugs. Par
 **Próxima ação que eu executo por você**  
 Posso gerar agora os **comandos exatos** para criar o branch `docs/update-readme`, commitar este `README.md` em Markdown e abrir o PR; cole **Gerar comandos** e eu preparo tudo pronto para você colar no terminal.
 
+## 🔗 Demonstração do Aplicativo (Lovable)
+
+O protótipo funcional do **VibeFinanças** foi implementado utilizando a plataforma **Lovable** e pode ser acessado no link abaixo:
+
+👉 https://vibe-chat-finance.lovable.app
+
+### O que é demonstrado no aplicativo
+- Onboarding do usuário (nome, objetivo financeiro e idioma)
+- Fluxo guiado de registro de transações (wizard)
+- Captura estruturada de dados (tipo, valor, categoria, data e observação)
+- Confirmação explícita antes do salvamento
+- Suporte multilíngue (Português, Inglês, Espanhol e Francês)
+- Convivência entre fluxo guiado e entrada por texto livre (NLU)
+
+Este link serve como evidência funcional do conceito descrito neste repositório.
