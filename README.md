@@ -215,3 +215,12 @@ O protótipo funcional do **VibeFinanças** foi implementado utilizando a plataf
 - Convivência entre fluxo guiado e entrada por texto livre (NLU)
 
 Este link serve como evidência funcional do conceito descrito neste repositório.
+
+---
+
+## 📸 Evidências Visuais
+
+Abaixo estão algumas capturas de tela do aplicativo em funcionamento, demonstrando o fluxo guiado de registro de transações e a interface do usuário.
+
+> As imagens estão disponíveis na pasta `assets/screenshots/`.
+
